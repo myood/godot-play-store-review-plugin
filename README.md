@@ -8,7 +8,7 @@ PlayStore Review Plugin for Godot 3.2.2+
 
 This plugin allows to ask the Android user for a review of your game, using the `Google Play In-App Review API`. For the API itself see [here](https://developer.android.com/guide/playcore/in-app-review).
 
-![Review Flow Screenshot](/preview.jpeg "Review Flow Screenshot" =400x800)
+<img src="preview.jepg" alt="Review Flow Screenshot" width="400" height="800"/>
 
 ## Export Setup
 

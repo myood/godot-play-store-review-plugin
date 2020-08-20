@@ -2,7 +2,7 @@
 PlayStore Review Plugin for Godot 3.2.2+
 
 # ATTENTION
-This plugin is provided as-is, without any warranty, without any support. If I have time I'll try to reply to any issues rised.
+This plugin is provided as-is, without any warranty, without any support. If I have time I'll try to reply to any issues rised. I tested it with [this Play Games Services](https://github.com/cgisca/PGSGP) plugin enabled, so I'm not sure how it will work without user signed in to these services.
 
 ## Functionality
 
@@ -21,7 +21,7 @@ This plugin allows to ask the Android user for a review of your game, using the 
 To access the plugin:
 
 ```
-    var review_plugin = null
+var review_plugin = null
     
 func init_review_plugin():
     if Engine.has_singleton("GodotPlayStoreReview"):
@@ -35,6 +35,8 @@ The example use is:
 
 ```
 func start_review():
+    if not review_plugin:
+        return
     review_plugin.connect("finished", self, "on_review_finished", [], CONNECT_ONESHOT)
     review_plugin.start_review()
 
@@ -45,7 +47,7 @@ func on_review_finished(status_code):
 The `Google Play In-App Review API` itself doesn't say if review was actually done (or even if the review GUI showed up). The API only says if the review flow finished. The plugin on the other hand, reports a few status codes:
 
 ```
-    STATUS_SUCCESS = 0;
+    STATUS_SUCCESS = 0;                  # this only means that no errors occured, it doesn't guarantee if review was actually done
     REVIEW_MANAGER_CREATION_FAILED = 1;
     REVIEW_TASK_CREATION_FAILED = 2;
 ```

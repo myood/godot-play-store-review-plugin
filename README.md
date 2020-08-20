@@ -55,3 +55,5 @@ The `Google Play In-App Review API` itself doesn't say if review was actually do
 ```
 
 They will be more clear if you follow the examples in [the API overview](https://developer.android.com/guide/playcore/in-app-review).
+
+*From my experience once you call start_review(), then every subsequent call will "do nothing".*

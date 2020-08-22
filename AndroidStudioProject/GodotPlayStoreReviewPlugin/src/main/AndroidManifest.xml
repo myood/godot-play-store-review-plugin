@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zywegry.godotplaystorereview">
+    <application>
+        <meta-data
+            android:name="org.godotengine.plugin.v1.GodotPlayStoreReview"
+            android:value="com.zywegry.godotplaystorereview.GodotPlayStoreReview" />
+    </application>
+</manifest>

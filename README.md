@@ -61,3 +61,4 @@ They will be more clear if you follow the examples in [the API overview](https:/
 ## License
 
 Distributed under [WTFPL](https://en.wikipedia.org/wiki/WTFPL#Version_2), see LICENSE.md in this repository.
+**It is very appreciated, if you somehow link to this repo in your work, so that other people could also benefit from this.**

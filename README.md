@@ -17,8 +17,9 @@ This plugin allows to ask the Android user for a review of your game, using the 
 1. Setup android export as usual, but with custom build template enabled.
 1. Download and move files GodotPlayStoreReview.release.gdap and GodotPlayStoreReview.release.aar to the res://android/plugins. The 'android' directory should be created during the step 1 in your project root directory. If 'plugins' subdir does not exist, simply create it.
 1. Set minimum SDK to 21 - Open the res://android/config.gradle, find line 'minSdk: XYZ' and make sure it is equal or greater then 21.
-1. Start Godot Editor, it should print to the console - 'Found Android Plugin GodotPlayStoreReview'. If not, something went wrong and you should redo previous steps.
-1. Open 'Project -> Export...', then under export 'Options' find 'Plugins' and check the checkbox with 'GodotPlayStoreReview'.
+    - alternatively call `sed "s@\(minSdk[[:space:]]\+:[[:space:]]\+\)[[:digit:]]\+@\121@g" -i android/build/config.gradle` as part of your build steps.
+3. Start Godot Editor, it should print to the console - 'Found Android Plugin GodotPlayStoreReview'. If not, something went wrong and you should redo previous steps.
+4. Open 'Project -> Export...', then under export 'Options' find 'Plugins' and check the checkbox with 'GodotPlayStoreReview'.
 
 ## Usage in GDscript & API:
 

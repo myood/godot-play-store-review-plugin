@@ -26,7 +26,7 @@ public class GodotPlayStoreReview extends org.godotengine.godot.plugin.GodotPlug
     public GodotPlayStoreReview(Godot godot) {
         super(godot);
 
-        this.review_manager = ReviewManagerFactory.create(godot);
+        this.review_manager = ReviewManagerFactory.create(getActivity());
     }
 
     private static final int STATUS_SUCCESS = 0;
@@ -56,7 +56,7 @@ public class GodotPlayStoreReview extends org.godotengine.godot.plugin.GodotPlug
             else {
                 // We can get the ReviewInfo object
                 ReviewInfo reviewInfo = task.getResult();
-                Task<Void> flow = review_manager.launchReviewFlow(this.getGodot(), reviewInfo);
+                Task<Void> flow = review_manager.launchReviewFlow(getActivity(), reviewInfo);
                 flow.addOnCompleteListener(flow_task -> {
                     // The flow has finished. The API does not indicate whether the user
                     // reviewed or not, or even whether the review dialog was shown. Thus, no

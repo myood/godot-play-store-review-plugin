@@ -13,7 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/GodotPlayStoreReviewPlugin" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/godot-lib.3.2.2.stable.release" />
+            <option value="$PROJECT_DIR$/godot-lib.3.3.stable.release" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

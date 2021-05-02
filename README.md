@@ -1,5 +1,5 @@
 # godot-play-store-review-plugin
-PlayStore Review Plugin for Godot 3.2.2+
+PlayStore Review Plugin for Godot 3.3+
 
 # ATTENTION
 *This plugin is provided as-is, without any warranty, without any support. If I have time I'll try to reply to any issues rised. I tested it with [this Play Games Services](https://github.com/cgisca/PGSGP) plugin enabled, so I'm not sure how it will work without user signed in to these services.*

@@ -23,4 +23,4 @@ jobs:
         chmod +x ./gradlew
         ./gradlew build
     - name: Debug print
-        find .
+      run: find .

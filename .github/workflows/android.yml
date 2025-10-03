@@ -22,3 +22,5 @@ jobs:
         cd ./AndroidStudioProject
         chmod +x ./gradlew
         ./gradlew build
+    - name: Debug print
+        find .
